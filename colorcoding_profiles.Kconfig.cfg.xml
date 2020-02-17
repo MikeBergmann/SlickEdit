@@ -1,0 +1,29 @@
+<options>
+	<profile n="colorcoding_profiles.Kconfig" version="2">
+		<p n="case_sensitive" v="0"/>
+		<p n="idchars" v="a-zA-Z_$ 0-9"/>
+		<p n="mn_flags" v="digit_int digit_float dot_float zerox_hex"/>
+		<p n="comment,#">
+			<attrs color_to_eol="comment"/>
+		</p>
+		<p n="k,bool"/>
+		<p n="k,choice"/>
+		<p n="k,config"/>
+		<p n="k,default"/>
+		<p n="k, depends on"/>
+		<p n="k,endchoice"/>
+		<p n="k,endif"/>
+		<p n="k,endmenu"/>
+		<p n="k,help"/>
+		<p n="k,if"/>
+		<p n="k,int"/>
+		<p n="k,menu"/>
+		<p n="k,prompt"/>
+		<p n="k,select"/>
+		<p n="k,source"/>
+		<p n="k,tristate"/>
+		<p n='string,"'>
+			<attrs end='"'/>
+		</p>
+	</profile>
+</options>
