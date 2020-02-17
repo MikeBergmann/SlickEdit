@@ -1,0 +1,22 @@
+<options>
+	<profile n="colorcoding_profiles.OpenEmbedded" version="2">
+		<p n="idchars" v="a-zA-Z_$ 0-9"/>
+		<p n="case_sensitive" v="0"/>
+		<p n="mn_flags" v="digit_float dot_float digit_int"/>
+		<p n="comment,#">
+			<attrs color_to_eol="comment"/>
+		</p>
+		<p n='string,"'>
+			<attrs end='"' line_continuation_char="\"/>
+		</p>
+		<p n="string,'">
+			<attrs end="'"/>
+		</p>
+		<p n="function,(?&lt;!python.+)\(.*\).*{">
+			<attrs end="(?&lt;!(\\${.+)|({))}" flags="end_perlre perlre multiline color_as_embedded_if_found" embedded_lexer="Bourne Shell"/>
+		</p>
+		<p n="function,(?&lt;=python).*\(.*\).*{">
+			<attrs end="(?&lt;!(\\${.+)|({))}" flags="end_perlre color_as_embedded_if_found perlre multiline" embedded_lexer="Python"/>
+		</p>
+	</profile>
+</options>
